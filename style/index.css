@@ -24,8 +24,13 @@ time, mark, audio, video {
 footer, header, hgroup, menu, nav, section {
 	display: block;
 } */
+*{
+    max-width:100%;
+}
 body {
-	line-height: 1;
+    overflow-x: hidden;
+    line-height: 1;
+    
 }
 }
 blockquote, q {
@@ -81,11 +86,33 @@ justify-content: center;
 
 }
 footer{
-    height: 6rem;
+    bottom:0;
+    display:block;
+    width:100%;
+    position: fixed;
     background-color: grey;
+    
 }
 .footer{
    padding:2rem;
     display:flex;
-    justify-content: center;
+   justify-content: center; 
+}
+@media(max-width:500px){
+max-width:100%;
+background-color: blue;
+}
+@media(max-width:800px){
+ max-width:100%;
+ 
+ 
+}   
+.images div{
+    display:flex;
+/* flex-direction:column-reverse; */
+align-items: center;
+
+}
+.nav{
+     
 }
